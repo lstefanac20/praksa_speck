@@ -1,0 +1,460 @@
+@font-face {
+    font-family: 'heywow';
+    src: url('/fonts/heywow/heywow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+.body{
+    font-family: 'heywow';
+}
+  
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+
+.navLinks {
+    display: none;
+}
+  
+.navToggle {
+    font-size: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+  
+.navToggle:focus {
+    outline: none;
+}
+  
+.navLinks.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.8);
+    z-index: 2;
+}
+  
+.navLinks a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    border-bottom: 1px solid #f4f4f4;
+    text-align: center;
+}
+  
+.getInTouch {
+    padding: 8px 16px;
+    background-color: #BF3939;
+    color: #fff;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 800;
+    display: flex;
+    padding: 8px 16px 8px 16px;
+}
+  
+.getInTouch:hover {
+    background-color: #722222;
+}
+
+.navLeft {
+    display: flex;
+    align-items: center;
+}
+  
+  
+.logo {
+    display: flex;
+    align-items: center;
+}
+  
+.logo img {
+    height: 20px;
+    padding-left: 20px;
+    padding-top: 26px;
+}
+
+.header{
+    position: relative;
+    margin: 20px 0;
+    height: 200px;
+}
+
+.h1{
+    font-size: 100px;
+    line-height: 100px;
+    font-weight: 900;
+    color: #F4F5F6;
+    position: absolute;
+    left: 5px;
+    z-index: -1;
+    margin: 0;
+    width: 831px;
+}
+  
+.h2{
+    font-size: 44px;
+    line-height: 58px;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    width: 353px;
+    top: 45px;
+    left: 20px;
+}
+  
+.redDot {
+    color: #BF3939;
+}
+
+.section{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.formGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+}
+
+.formGroup input:last-child,
+.formGroup select:last-child {
+     margin-right: 0; 
+}
+
+.formGroup input,
+.formGroup select {
+    flex: 1; 
+    margin-right: 10px; 
+}
+
+.formGroup.fullWidth {
+    flex-direction: column;
+    align-items: stretch;
+}
+.formInput,
+.formSelect,
+.formTextarea {
+    font-family: 'heywow';
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px dotted #CBD3D6;
+    font-size: 16px;
+}
+
+.formTextarea{
+    resize: horizontal;
+}
+  
+.budgetOptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+  
+.budgetOptions button {
+    padding: 2px 16px;
+    background-color: #FFF;
+    border: 2px solid #CBD3D6;
+    border-radius: 48px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 32px;
+    font-weight: 900;
+}
+  
+.budgetOptions button:hover {
+    background-color: #BF3939;
+    border-color: #BF3939;
+    color: #FFF;
+}
+
+.budget{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+  .formTextArea {
+    font-family: "heywow";
+    width: 100%;
+    border: none;
+    border-bottom: 2px dotted #CBD3D6;
+    font-size: 16px;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+  }
+  
+  .formTextArea::placeholder {
+    color: #CBD3D6;
+  }
+  
+  .uploadBox {
+    position: relative;
+    border: 2px dotted #CBD3D6;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uploadBox::before {
+    content: url("/Vector.png");
+    width: 24px;
+    height: 24px;
+    color: #CBD3D6;
+    margin-right: 10px;
+}
+  
+  .uploadBox input[type="file"] {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+
+
+.checkboxGroup {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    user-select: none;
+    margin: 10px;
+}
+
+
+.checkboxGroup input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkboxGroup .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #CBD3D6;
+    border-radius: 4px;
+}
+
+
+.checkboxGroup input:checked ~ .checkmark {
+    background-color: #BF3939;
+    border-color: #BF3939;
+}
+
+
+.checkboxGroup .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkboxGroup input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkboxGroup .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+  
+.submitButton {
+    background-color: #BF3939;
+    width: 110px;
+    padding: 12px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 32px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 20px;
+}
+  
+.submitButton:hover {
+    background-color: #722222;
+}
+  
+.footer {
+    background-color: #212129;
+    color: #ccc;
+    padding: 40px 20px;
+    font-family: "heywow", sans-serif;
+}
+  
+.footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.footerSection {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+  
+.footerSection h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #777;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+  
+.footerSection h4 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 10px;
+}
+  
+.footerSection p, .footerSection a {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+  
+.footerSection a:hover {
+    text-decoration: underline;
+}
+
+.footerSectionA a{
+   text-decoration: none;
+}
+  
+.socialIcons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+  
+.socialIcons img {
+    width: 24px;
+    height: 24px;
+}
+
+
+/*@media pravila*/
+@media (min-width: 1440px) {   
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        
+    }
+    .logo img{
+        padding-left: 102px;
+    }
+
+    .getInTouch{
+        order: 2;
+        margin-left: auto !important;
+        padding: 16px 32px 16px 32px;
+    }
+
+    .navLinks {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        margin-right: 45px;
+    }
+
+    .navLinks a{
+        border-bottom: none;
+    }
+
+    .navToggle {
+        display: none; 
+    }
+
+    .navLeft {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        
+    }      
+
+    .h1 {
+        font-size: 180px; 
+        line-height: 64px;
+        left: 79px;
+        top: 90px;
+        width: 100%;
+        white-space: nowrap ;
+    }
+
+    .h2 {
+        font-size: 66px; 
+        line-height: 64px;
+        width: auto; 
+        left: 112px;
+        top: 90px;
+    }
+
+    .section {
+        max-width: 1200px;
+        padding: 40px;
+    }
+
+    .footerContainer {
+        max-width: 1440px;
+    }
+
+    .footerSection {
+        min-width: 300px; 
+    }
+}
